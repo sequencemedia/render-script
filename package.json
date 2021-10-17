@@ -1,6 +1,6 @@
 {
   "name": "render-script",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "./lib/index.cjs",
   "type": "module",
   "author": {
@@ -17,10 +17,11 @@
     "lint": "eslint . --ext .cjs --ext .mjs",
     "lint:fix": "npm run lint -- --fix",
     "test": "cross-env NODE_ENV=test mocha test --recursive --verbose --color",
+    "gulp": "gulp --color",
     "clean": "rimraf lib",
     "build": "npm run babel",
     "babel": "babel src -d lib --out-file-extension .cjs",
-    "pre-commit": "npm run lint && npm run build && git add lib",
+    "pre-commit": "npm run lint && npm run build && git add lib && npm run gulp -- pre-commit",
     "prepublishOnly": "npm run build",
     "prebuild": "npm run clean"
   },
@@ -43,9 +44,13 @@
     "eslint-plugin-mocha": "^9.0.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0",
+    "gulp": "^4.0.2",
     "husky": "^7.0.2",
     "mocha": "^9.1.3",
     "rimraf": "^3.0.2"
+  },
+  "imports": {
+    "#build/gulp/*": "./build/gulp/*.mjs"
   },
   "exports": {
     "import": "./src/index.mjs",
