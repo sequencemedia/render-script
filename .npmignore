@@ -1,0 +1,14 @@
+.circleci
+.husky
+
+build
+test
+
+.eslintignore
+.eslintrc
+
+.gitignore
+.npmignore
+
+babel.config.*
+gulpfile.*
