@@ -1,3 +1,10 @@
+/*!
+ * renderapp.js
+ * http://renderapp.co
+ *
+ * Copyright 2021 Renderapp Limited
+ */
+
 import debug from 'debug'
 
 const log = debug('render-script')
