@@ -16,9 +16,12 @@
   "scripts": {
     "lint": "eslint . --ext .cjs --ext .mjs",
     "lint:fix": "npm run lint -- --fix",
+    "clean": "rimraf lib",
     "build": "npm run babel",
     "babel": "babel src -d lib --out-file-extension .cjs",
-    "pre-commit": "npm run lint && npm run build && git add lib"
+    "pre-commit": "npm run lint && npm run build && git add lib",
+    "prepublishOnly": "npm run build",
+    "prebuild": "npm run clean"
   },
   "dependencies": {
     "debug": "^4.3.2"
@@ -36,7 +39,8 @@
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0",
-    "husky": "^7.0.2"
+    "husky": "^7.0.2",
+    "rimraf": "^3.0.2"
   },
   "imports": {
     "#~": "./src/index.mjs"
