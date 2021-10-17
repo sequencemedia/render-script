@@ -8,7 +8,7 @@ const log = debug('render-script:build:gulp:pre-commit')
 
 log('`render-script` is awake')
 
-const PACKAGE_VERSION_CHANGES = /-+\s+"version":\s"(\d+\.\d+\.\d+)",\s+\++\s+"version":\s"(\d+\.\d+\.\d+)",\s+/s
+const PACKAGE_VERSION_CHANGES = /\-+\s+"version":\s+"(\d+\.\d+\.\d+)",+\s+\++\s+"version":\s+"(\d+\.\d+\.\d+)",+\s/ /* eslint-disable-line no-useless-escape */
 
 const HAS_STAGED_CHANGES = /Changes to be committed/s
 
@@ -64,9 +64,17 @@ export default async function preCommit () {
   log('pre-commit')
 
   try {
+    /**
+     *  Not changes added, exit
+     */
     if (await notStagedChanges()) return
-
+    /**
+     *  Has changes added, continue
+     */
     if (await hasStagedChanges()) {
+      /**
+       *  Not package version changes, continue
+       */
       if (await notPackageVersionChanges()) {
         await patchPackageVersion()
         await addPackageVersionChanges()
