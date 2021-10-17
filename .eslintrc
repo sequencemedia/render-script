@@ -1,0 +1,14 @@
+{
+  "extends": "standard",
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  },
+  "settings": {
+    "import/extensions": [".mjs", ".cjs"],
+    "import/resolver": {
+      "babel-module": {}
+    }
+  }
+}

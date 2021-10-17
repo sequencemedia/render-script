@@ -1,0 +1,48 @@
+{
+  "name": "render-script",
+  "version": "0.0.1",
+  "main": "./lib/index.cjs",
+  "type": "module",
+  "author": {
+    "name": "Renderapp",
+    "email": "contact@renderapp.co",
+    "url": "http://renderapp.co"
+  },
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "git@sequencemedia.github.com:sequencemedia/render-script.git"
+  },
+  "scripts": {
+    "lint": "eslint . --ext .cjs --ext .mjs",
+    "lint:fix": "npm run lint -- --fix",
+    "build": "npm run babel",
+    "babel": "babel src -d lib --out-file-extension .cjs",
+    "pre-commit": "npm run lint && npm run build && git add lib"
+  },
+  "dependencies": {
+    "debug": "^4.3.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.8",
+    "@babel/eslint-parser": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "core-js": "^3.18.3",
+    "eslint": "7.12.1",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-import-resolver-babel-module": "^5.3.1",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "husky": "^7.0.2"
+  },
+  "imports": {
+    "#~": "./src/index.mjs"
+  },
+  "exports": {
+    "import": "./src/index.mjs",
+    "require": "./lib/index.cjs"
+  }
+}
