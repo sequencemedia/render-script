@@ -6,7 +6,10 @@
     "sourceType": "module"
   },
   "settings": {
-    "import/extensions": [".mjs", ".cjs"],
+    "import/extensions": [
+      ".mjs",
+      ".cjs"
+    ],
     "import/resolver": {
       "babel-module": {}
     }
