@@ -8,7 +8,7 @@ const log = debug('render-script:build:gulp:pre-commit')
 
 log('`render-script` is awake')
 
-const PACKAGE_VERSION_CHANGES = /\-+\s+"version":\s+"(\d+\.\d+\.\d+)",+\s+\++\s+"version":\s+"(\d+\.\d+\.\d+)",+\s/ /* eslint-disable-line no-useless-escape */
+const PACKAGE_VERSION_CHANGES = /\-+\s+"version":\s+"(\d+\.\d+\.\d+)",+\s+\++\s+"version":\s+"(\d+\.\d+\.\d+)",+\s+/ /* eslint-disable-line no-useless-escape */
 
 const HAS_STAGED_CHANGES = /Changes to be committed/s
 
