@@ -1,6 +1,6 @@
 {
   "name": "render-script",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "./lib/index.cjs",
   "type": "module",
   "author": {
@@ -43,9 +43,9 @@
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-mocha": "^9.0.0",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-promise": "^5.1.1",
     "gulp": "^4.0.2",
-    "husky": "^7.0.2",
+    "husky": "^7.0.4",
     "mocha": "^9.1.3",
     "rimraf": "^3.0.2"
   },
