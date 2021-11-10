@@ -1,6 +1,6 @@
 {
   "name": "render-script",
-  "version": "1.0.19",
+  "version": "1.0.20",
   "main": "./lib/index.cjs",
   "type": "module",
   "author": {
@@ -31,7 +31,7 @@
   "devDependencies": {
     "@babel/cli": "^7.16.0",
     "@babel/core": "^7.16.0",
-    "@babel/eslint-parser": "^7.16.0",
+    "@babel/eslint-parser": "^7.16.3",
     "@babel/preset-env": "^7.16.0",
     "babel-plugin-module-resolver": "^4.1.0",
     "chai": "^4.3.4",
