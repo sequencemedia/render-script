@@ -1,6 +1,6 @@
 {
   "name": "render-script",
-  "version": "1.0.20",
+  "version": "1.0.21",
   "main": "./lib/index.cjs",
   "type": "module",
   "author": {
@@ -40,7 +40,7 @@
     "eslint": "7.12.1",
     "eslint-config-standard": "^16.0.3",
     "eslint-import-resolver-babel-module": "^5.3.1",
-    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-mocha": "^9.0.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.1",
