@@ -51,8 +51,8 @@ workflows:
   commit-workflow:
     jobs:
       - publish:
-          branches:
-            only: master
           filters:
             tags:
               only: /^v.*/
+            branches:
+              only: master
