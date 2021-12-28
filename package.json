@@ -11,17 +11,19 @@
   "license": "UNLICENSED",
   "repository": {
     "type": "git",
-    "url": "git@sequencemedia.github.com:sequencemedia/render-script.git"
+    "url": "git@github.com:sequencemedia/render-script.git"
   },
   "scripts": {
-    "lint": "eslint . --ext .cjs --ext .mjs",
+    "lint": "eslint . --ext .mjs --ext .cjs",
     "lint:fix": "npm run lint -- --fix",
     "test": "cross-env NODE_ENV=test mocha test --recursive --verbose --color",
     "gulp": "gulp --color",
     "clean": "rimraf lib",
     "build": "npm run babel",
     "babel": "babel src -d lib --out-file-extension .cjs",
-    "pre-commit": "npm run lint && npm run build && git add lib && npm run gulp -- pre-commit",
+    "pre-commit": "npm run lint && npm run build && git add lib && cross-env DEBUG=render-script,render-script:* npm run gulp -- pre-commit",
+    "post-commit": "cross-env DEBUG=render-script,render-script:* npm run gulp -- post-commit",
+    "prepare": "husky install",
     "prepublishOnly": "npm run build",
     "prebuild": "npm run clean"
   },
