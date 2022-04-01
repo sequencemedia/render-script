@@ -15,9 +15,9 @@ const RULE_MAP = new Map()
 
 const isTruthy = (v) => Boolean((v || '').trim())
 
-export function evaluateRuleForConfiguration (rule = '', configuration = '') {
+function evaluate (rule, configuration) {
   /**
-   *  log('evaluateRuleForConfiguration')
+   *  log('evaluate')
    */
 
   function isSubRuleValid (subRule) {
@@ -94,10 +94,20 @@ export function evaluateRuleForConfiguration (rule = '', configuration = '') {
       .some(isRuleSetValid)
   }
 
-  return isTruthy(rule) ? isTruthy(configuration) ? evaluateRule(rule) : false : false
+  return evaluateRule(rule)
 }
 
-export const getRuleMap = (ruleMap = RULE_MAP) => ruleMap
+export function evaluateRuleForConfiguration (rule = '', configuration = '') {
+  /**
+   *  log('evaluateRuleForConfiguration')
+   */
+
+  return isTruthy(rule) ? isTruthy(configuration) ? evaluate(rule, configuration) : false : false
+}
+
+export function getRuleMap (ruleMap = RULE_MAP) {
+  return ruleMap
+}
 
 export function getConfigurationMap (ruleMap = new Map(), rule = '') {
   /**
