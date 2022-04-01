@@ -13,7 +13,7 @@ log('`render-script` is awake')
 
 const RULE_MAP = new Map()
 
-const isTruthy = (v) => !!(v || '').trim()
+const isTruthy = (v) => Boolean((v || '').trim())
 
 export function evaluateRuleForConfiguration (rule = '', configuration = '') {
   /**
@@ -94,7 +94,7 @@ export function evaluateRuleForConfiguration (rule = '', configuration = '') {
       .some(isRuleSetValid)
   }
 
-  return evaluateRule(rule)
+  return isTruthy(rule) ? isTruthy(configuration) ? evaluateRule(rule) : false : false
 }
 
 export const getRuleMap = (ruleMap = RULE_MAP) => ruleMap
@@ -149,4 +149,4 @@ export function getEvaluation (configurationMap = new Map(), rule = '', configur
   return evaluation
 }
 
-export default (rule = '', configuration = '') => getEvaluation(getConfigurationMap(getRuleMap(), rule), rule, configuration)
+export default (rule = '', configuration = '') => isTruthy(rule) ? isTruthy(configuration) ? getEvaluation(getConfigurationMap(getRuleMap(), rule), rule, configuration) : false : false
