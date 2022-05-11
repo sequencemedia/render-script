@@ -1,14 +1,28 @@
+.DS_Store
+
 .circleci
 .husky
 
-build
-test
+.editorconfig
 
 .eslintignore
 .eslintrc
 
+.github
 .gitignore
+
+# NPM
 .npmignore
+.npmrc
+
+# NVM
+.nvmrc
+
+# Deps
+.depsrc
+
+build
+test
 
 babel.config.*
 gulpfile.*
