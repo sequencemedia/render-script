@@ -38,7 +38,7 @@
     "@sequencemedia/hooks": "^1.0.327",
     "babel-plugin-module-resolver": "^5.0.0",
     "chai": "^4.3.7",
-    "core-js": "^3.27.2",
+    "core-js": "^3.28.0",
     "cross-env": "^7.0.3",
     "eslint": "^8.34.0",
     "eslint-config-standard": "^17.0.0",
