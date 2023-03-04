@@ -35,7 +35,7 @@
     "@babel/core": "^7.21.0",
     "@babel/eslint-parser": "^7.19.1",
     "@babel/preset-env": "^7.20.2",
-    "@sequencemedia/hooks": "^1.0.343",
+    "@sequencemedia/hooks": "^1.0.344",
     "babel-plugin-module-resolver": "^5.0.0",
     "chai": "^4.3.7",
     "core-js": "^3.29.0",
@@ -50,7 +50,7 @@
     "gulp": "^4.0.2",
     "husky": "^8.0.3",
     "mocha": "^10.2.0",
-    "rimraf": "^4.2.0"
+    "rimraf": "^4.3.0"
   },
   "exports": {
     "import": "./src/index.mjs",
