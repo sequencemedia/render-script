@@ -1,6 +1,6 @@
 {
   "name": "render-script",
-  "version": "1.1.429",
+  "version": "1.1.430",
   "main": "./lib/index.cjs",
   "type": "module",
   "author": {
