@@ -32,7 +32,7 @@
     "@babel/core": "^7.21.5",
     "@babel/eslint-parser": "^7.21.3",
     "@babel/preset-env": "^7.21.5",
-    "@sequencemedia/hooks": "^1.0.401",
+    "@sequencemedia/hooks": "^1.0.403",
     "babel-plugin-module-resolver": "^5.0.0",
     "chai": "^4.3.7",
     "core-js": "^3.30.1",
