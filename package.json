@@ -29,10 +29,10 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.21.5",
-    "@babel/core": "^7.21.8",
+    "@babel/core": "^7.22.1",
     "@babel/eslint-parser": "^7.21.8",
-    "@babel/preset-env": "^7.21.5",
-    "@sequencemedia/hooks": "^1.0.423",
+    "@babel/preset-env": "^7.22.2",
+    "@sequencemedia/hooks": "^1.0.424",
     "babel-plugin-module-resolver": "^5.0.0",
     "chai": "^4.3.7",
     "core-js": "^3.30.2",
