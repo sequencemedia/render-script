@@ -30,25 +30,12 @@ const presets = [
   ]
 ]
 
-const plugins = [
-  [
-    'module-resolver', {
-      root: ['.'],
-      cwd: 'babelrc',
-      alias: {
-        '~': './src'
-      }
-    }
-  ]
-]
-
 module.exports = (api) => {
   if (api) api.cache.using(env)
 
   return {
     compact: true,
     comments: false,
-    presets,
-    plugins
+    presets
   }
 }

@@ -3,16 +3,13 @@
   "extends": "standard",
   "parser": "@babel/eslint-parser",
   "parserOptions": {
-    "ecmaVersion": 2020,
+    "ecmaVersion": "latest",
     "sourceType": "module"
   },
   "settings": {
     "import/extensions": [
       ".mjs",
       ".cjs"
-    ],
-    "import/resolver": {
-      "babel-module": {}
-    }
+    ]
   }
 }

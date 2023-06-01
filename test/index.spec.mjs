@@ -9,7 +9,7 @@ import evaluate, {
   getEvaluation
 } from 'render-script'
 
-describe('~', () => {
+describe('`render-script`', () => {
   describe('`evaluate`', () => {
     it('is a function', () => {
       return expect(evaluate)
