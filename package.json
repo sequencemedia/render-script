@@ -37,7 +37,13 @@
     "mocha": "^10.2.0"
   },
   "exports": {
-    "import": "./src/index.mjs",
-    "require": "./src/index.cjs"
+    ".": {
+      "import": "./src/index.mjs",
+      "require": "./src/index.cjs"
+    },
+    "./evaluate": {
+      "import": "./src/evaluate.mjs",
+      "require": "./src/evaluate.cjs"
+    }
   }
 }

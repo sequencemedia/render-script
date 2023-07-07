@@ -2,12 +2,30 @@ import {
   expect
 } from 'chai'
 
-import evaluate from 'render-script'
+import {
+  getRuleMap,
+  getConfigurationMap,
+  evaluate
+} from 'render-script/evaluate'
 
-describe('`render-script`', () => {
+describe('`render-script/evaluate`', () => {
   describe('`evaluate`', () => {
     it('is a function', () => {
       return expect(evaluate)
+        .to.be.a('function')
+    })
+  })
+
+  describe('`getRuleMap`', () => {
+    it('is a function', () => {
+      return expect(getRuleMap)
+        .to.be.a('function')
+    })
+  })
+
+  describe('`getConfigurationMap`', () => {
+    it('is a function', () => {
+      return expect(getConfigurationMap)
         .to.be.a('function')
     })
   })
@@ -126,6 +144,20 @@ describe('`render-script`', () => {
             .to.be.false
         })
       })
+    })
+  })
+
+  describe('`getRuleMap()`', () => {
+    it('is a `Map`', () => {
+      return expect(getRuleMap())
+        .to.be.an.instanceof(Map)
+    })
+  })
+
+  describe('`getConfigurationMap`', () => {
+    it('is a `Map`', () => {
+      return expect(getConfigurationMap())
+        .to.be.an.instanceof(Map)
     })
   })
 })

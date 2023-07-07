@@ -4,8 +4,8 @@ require('@babel/register')({
   ]
 })
 
-const {
-  default: evaluate
-} = require('./index.mjs')
+const evaluate = require('./evaluate.mjs')
 
-module.exports = evaluate
+module.exports = {
+  ...evaluate
+}
