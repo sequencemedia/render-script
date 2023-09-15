@@ -22,8 +22,6 @@
 # Deps
 .depsrc
 
-build
 test
 
 babel.config.*
-gulpfile.*
