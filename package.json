@@ -28,7 +28,7 @@
     "@babel/preset-env": "^7.24.5",
     "@babel/register": "^7.23.7",
     "@sequencemedia/hooks": "^1.0.490",
-    "chai": "^5.1.0",
+    "chai": "^5.1.1",
     "core-js": "^3.37.0",
     "cross-env": "^7.0.3",
     "eslint": "8.57.0",
