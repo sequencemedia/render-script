@@ -13,12 +13,8 @@ function merge (alpha) {
 
 export default (
   merge({
-    files: [
-      '*',
-      'src/*'
-    ],
     ignores: [
-      'test'
+      'test/*'
     ],
     languageOptions: {
       globals: {
@@ -29,10 +25,6 @@ export default (
     merge({
       files: [
         'test/*'
-      ],
-      ignores: [
-        '*',
-        'src/*'
       ],
       languageOptions: {
         globals: {
