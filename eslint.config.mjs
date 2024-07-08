@@ -1,20 +1,10 @@
 import globals from 'globals'
-import standard from '@sequencemedia/eslint-config-standard'
-
-function merge (alpha) {
-  return (
-    standard
-      .map((omega) => ({
-        ...omega,
-        ...alpha
-      }))
-  )
-}
+import merge from '@sequencemedia/eslint-config-standard/merge'
 
 export default (
   merge({
     ignores: [
-      'test/*'
+      'test'
     ],
     languageOptions: {
       globals: {
@@ -24,7 +14,7 @@ export default (
   }).concat(
     merge({
       files: [
-        'test/*'
+        'test/**/*.{cjs,mjs}'
       ],
       languageOptions: {
         globals: {
