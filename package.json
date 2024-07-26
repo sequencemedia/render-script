@@ -29,11 +29,11 @@
     "@babel/register": "^7.24.6",
     "@sequencemedia/eslint-config-standard": "^0.0.16",
     "@sequencemedia/hooks": "^1.0.506",
-    "chai": "^5.1.1",
+    "chai": "^4.5.0",
     "core-js": "^3.37.1",
     "cross-env": "^7.0.3",
     "eslint": "^9.7.0",
-    "husky": "^9.1.1",
+    "husky": "^9.1.2",
     "mocha": "^10.7.0"
   },
   "exports": {
