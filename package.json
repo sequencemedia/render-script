@@ -27,13 +27,13 @@
     "@babel/eslint-parser": "^7.25.9",
     "@babel/preset-env": "^7.26.0",
     "@babel/register": "^7.25.9",
-    "@sequencemedia/eslint-config-standard": "^0.0.77",
+    "@sequencemedia/eslint-config-standard": "^0.0.78",
     "chai": "^5.1.2",
     "core-js": "^3.38.1",
     "cross-env": "^7.0.3",
     "eslint": "^9.13.0",
     "husky": "^9.1.6",
-    "mocha": "^10.7.3"
+    "mocha": "^10.8.1"
   },
   "exports": {
     ".": {
