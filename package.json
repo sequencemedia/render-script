@@ -27,7 +27,7 @@
     "@babel/eslint-parser": "^7.25.9",
     "@babel/preset-env": "^7.26.0",
     "@babel/register": "^7.25.9",
-    "@sequencemedia/eslint-config-standard": "^0.0.82",
+    "@sequencemedia/eslint-config-standard": "^0.0.83",
     "chai": "^5.1.2",
     "core-js": "^3.39.0",
     "cross-env": "^7.0.3",
