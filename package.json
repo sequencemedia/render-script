@@ -11,7 +11,7 @@
   "license": "UNLICENSED",
   "repository": {
     "type": "git",
-    "url": "git@github.com:sequencemedia/render-script.git"
+    "url": "git+ssh://git@github.com/sequencemedia/render-script.git"
   },
   "scripts": {
     "lint": "eslint .",
