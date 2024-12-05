@@ -14,16 +14,17 @@ export default (
         ...globals.node
       }
     }
-  }).concat(
-    merge({
-      files: [
-        'test/**/*.{cjs,mjs}'
-      ],
-      languageOptions: {
-        globals: {
-          ...globals.mocha
+  })
+    .concat(
+      merge({
+        files: [
+          'test/**/*.{cjs,mjs}'
+        ],
+        languageOptions: {
+          globals: {
+            ...globals.mocha
+          }
         }
-      }
-    })
-  )
+      })
+    )
 )
