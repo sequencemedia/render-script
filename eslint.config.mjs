@@ -4,7 +4,7 @@ import merge from '@sequencemedia/eslint-config-standard/merge'
 export default [
   ...merge({
     files: [
-      'test/**/*.{cjs,mjs}'
+      '**/*.{cjs,mjs}'
     ],
     ignores: [
       'test'
