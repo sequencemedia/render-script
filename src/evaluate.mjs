@@ -1,8 +1,8 @@
 /*!
- * renderapp.js
- * http://renderapp.co
+ *  renderapp.js
+ *  http://renderapp.co
  *
- * Copyright 2021 Renderapp Limited
+ *  Copyright 2021 Renderapp Limited
  */
 
 import debug from 'debug'
