@@ -20,7 +20,7 @@
     "test": "cross-env NODE_ENV=test mocha test --recursive --verbose --color"
   },
   "dependencies": {
-    "debug": "^4.4.0"
+    "debug": "^4.4.1"
   },
   "devDependencies": {
     "@babel/core": "^7.27.1",
