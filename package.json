@@ -1,6 +1,6 @@
 {
   "name": "render-script",
-  "version": "1.2.222",
+  "version": "1.2.223",
   "main": "./src/index.mjs",
   "type": "module",
   "author": {
