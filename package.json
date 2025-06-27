@@ -23,7 +23,7 @@
     "debug": "^4.4.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.27.4",
+    "@babel/core": "^7.27.7",
     "@babel/preset-env": "^7.27.2",
     "@sequencemedia/eslint-config-standard": "^0.2.69",
     "chai": "^5.2.0",
