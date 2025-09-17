@@ -20,12 +20,12 @@
     "test": "cross-env NODE_ENV=test mocha test --recursive --verbose --color"
   },
   "dependencies": {
-    "debug": "^4.4.1"
+    "debug": "^4.4.3"
   },
   "devDependencies": {
     "@babel/core": "^7.28.4",
     "@babel/preset-env": "^7.28.3",
-    "@sequencemedia/eslint-config-standard": "^0.2.82",
+    "@sequencemedia/eslint-config-standard": "^0.2.83",
     "chai": "^6.0.1",
     "core-js": "^3.45.1",
     "cross-env": "^10.0.0",
