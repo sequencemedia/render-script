@@ -25,11 +25,11 @@
   "devDependencies": {
     "@babel/core": "^7.28.4",
     "@babel/preset-env": "^7.28.3",
-    "@sequencemedia/eslint-config-standard": "^0.2.84",
+    "@sequencemedia/eslint-config-standard": "^0.2.85",
     "chai": "^6.0.1",
     "core-js": "^3.45.1",
     "cross-env": "^10.0.0",
-    "eslint": "^9.35.0",
+    "eslint": "^9.36.0",
     "globals": "^16.4.0",
     "husky": "^9.1.7",
     "mocha": "^11.7.2"
