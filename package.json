@@ -25,7 +25,7 @@
   "devDependencies": {
     "@babel/core": "^7.28.4",
     "@babel/preset-env": "^7.28.3",
-    "@sequencemedia/eslint-config-standard": "^0.2.89",
+    "@sequencemedia/eslint-config-standard": "^0.2.90",
     "chai": "^6.2.0",
     "core-js": "^3.45.1",
     "cross-env": "^10.1.0",
