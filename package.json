@@ -24,10 +24,10 @@
   },
   "devDependencies": {
     "@babel/core": "^7.29.0",
-    "@babel/preset-env": "^7.29.0",
+    "@babel/preset-env": "^7.29.2",
     "@sequencemedia/eslint-config-standard": "^0.2.107",
     "chai": "^6.2.2",
-    "core-js": "^3.48.0",
+    "core-js": "^3.49.0",
     "cross-env": "^10.1.0",
     "eslint": "9.38.0",
     "globals": "^17.4.0",
