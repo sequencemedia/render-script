@@ -23,8 +23,8 @@
     "debug": "^4.4.3"
   },
   "devDependencies": {
-    "@babel/core": "^7.29.0",
-    "@babel/preset-env": "^7.29.5",
+    "@babel/core": "^7.29.7",
+    "@babel/preset-env": "^7.29.7",
     "@sequencemedia/eslint-config-standard": "^0.2.107",
     "chai": "^6.2.2",
     "core-js": "^3.49.0",
@@ -32,7 +32,7 @@
     "eslint": "9.38.0",
     "globals": "^17.6.0",
     "husky": "^9.1.7",
-    "mocha": "^11.7.5"
+    "mocha": "^11.7.6"
   },
   "exports": {
     ".": {
