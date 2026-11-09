@@ -43,5 +43,8 @@
       "import": "./src/evaluate.mjs",
       "require": "./src/evaluate.cjs"
     }
+  },
+  "allowScripts": {
+    "core-js@3.51.0": true
   }
 }
